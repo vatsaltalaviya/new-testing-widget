@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Script Widget</title>
+    <meta name="description" content="A premium testing script widget demonstration page with modern aesthetics and responsive design.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --text: #f8fafc;
+            --bg: #0f172a;
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            /* Requested 5rem body padding */
+            padding: 5rem;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 10%, rgba(168, 85, 247, 0.1) 0%, transparent 40%);
+        }
+
+        .header-section {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 2rem;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 2rem; }
+            .header-section { height: auto; padding: 1rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-section">
+        <h1>testing script widget</h1>
+    </header>
+    
+    <main>
+        <!-- Content can go here -->
+    </main>
+</body>
+</html>
